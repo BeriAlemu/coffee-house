@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "disciplin";
+    src: url("DISCIPLINA PERSONAL USE.ttf");
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: "disciplin";
+}
+
+body{
+    background: #f6f5ec;
+}
+
+ul{
+    list-style: none;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.left-nav{
+    padding: 20px;
+    width: 20%;
+}
+
+.logo{
+    width: 200px;
+}
+
+.mid-nav>ul{
+    width: 100%;
+    display: flex; 
+}
+
+.navigation-button{
+    padding: 0px 30px;
+}
+
+
+.right-nav{
+    display: flex;
+}
+
+.right-navigation-button{
+    padding: 10px 40px;
+    margin: 30px;
+    width: fit-content;
+    border: none;
+    background: #8b6350;
+    border-radius: 20px;
+}
+
+.right-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    padding-top: 8px;
+    width: 25px;
+}
+
+.sign-up{
+    color: aliceblue;
+}
+
+.hero-box{
+    padding: 0 30px;
+    display: flex;
+}
+
+.left-hero{
+    width: 50%;
+    padding-top: 40px;
+}
+
+.hero-heading{
+    font-size: 80px;
+    background: -webkit-linear-gradient(#3f1b05, #a0635e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "disciplin";
+}
+
+.hero-secondary-heading{
+    font-size: 40px;
+    padding: 10px 0;
+    font-family: "disciplin";
+}
+.hero-third-heading{
+    font-size: 20px;
+    padding: 10px 0;
+    padding-bottom: 40px;
+    font-family: "disciplin";
+    font-weight: 100;
+}
+
+.main-button{
+    padding: 10px 40px;
+    margin: 10px 20px;
+    width: fit-content;
+    border: none;
+    background: #8b6350;
+    border-radius: 20px; 
+}
+
+.main-button-color{
+    color: white;
+}
+
+.right-hero{
+    width: 50%;
+}
+
+
+.clock{
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+}
+
+.clock-border{
+    width: 460px;
+    height: 460px;
+    background-image: url(coffe_clock_updated-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.analog-min{
+    position: absolute;
+    width: 30px;
+    height: 150px;
+    top: 116.5px;
+    left: 215px;
+    background-image: url(spoon-min-removebg-preview.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: 50% 75%;
+}
+
+.analog-sec{
+    position: absolute;
+    width: 25.5px;
+    height: 130px;
+    background-image: url(spoon-second.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-x: right;
+    top: 216.5px;
+    left: 216.5px;
+    transform-origin: 50% 10%;
+    rotate: 180deg; 
+}
+
+.analog-hour{
+    position: absolute;
+    width: 28px;
+    height: 85px;
+    background-image:url(spoon-hour.png);
+    background-size: 27px;
+    background-repeat: no-repeat;
+    top: 212px;
+    left: 217px;
+    transform-origin: 50% 20%;
+    z-index: 1;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+
+.container-two{
+    display: flex;
+    justify-content: center;
+}
+
+.slider{
+    width: 80%;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent)
+}
+
+.list{
+    display: inline-block;
+    animation: 5s slide infinite;
+    animation-timing-function: linear;
+}
+
+.image{
+    padding-top: 30px;
+    height: 100px;
+}
+
+.item{
+    display: inline; 
+}
+
+.second-part{
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.coffee-beans-img{
+    width: 8%;
+}
+
+.menu-preview-heading{
+    font-family: "disciplin";
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+.menu-preview-second-heading{
+    font-family: "disciplin";
+    font-size: 20px;
+    padding-top: 5px;
+    letter-spacing: 3px;
+}
+
+.menu{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    padding: 60px 30px; 
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px ;
+}
+
+.card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 60px;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background: #dfe8da;
+}
+
+.first-image{
+    width: 80px;
+    position: absolute;
+    top: -60px;
+}
+
+.lorem{
+    padding: 20px;
+}
