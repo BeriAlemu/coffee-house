@@ -3,6 +3,11 @@
     src: url("DISCIPLINA PERSONAL USE.ttf");
 }
 
+@font-face {
+    font-family: "tanker";
+    src: url(Tanker-Regular.otf);
+}
+
 
 *{
     margin: 0;
@@ -18,6 +23,8 @@ a{
 
 body{
     background: #f6f5ec;
+    display: flex;
+    justify-content: center;
 }
 
 ul{
@@ -185,15 +192,6 @@ ul{
     z-index: 1;
 }
 
-@keyframes slide {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-
-    }
-}
 
 .container-two{
     display: flex;
@@ -231,10 +229,17 @@ ul{
     width: 100%;
     padding-top: 50px;
     text-align: center;
+    position: relative;
 }
 
 .coffee-beans-img{
     width: 8%;
+}
+
+.menu-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-preview-heading{
@@ -250,22 +255,31 @@ ul{
     letter-spacing: 3px;
 }
 
+.aligner{
+    width: 100%;
+    max-width: 2000px;
+    margin: 40px ;
+}
 .menu{
     width: 100%;
+    padding: 60px 30px;
     display: flex; 
+    align-items: center;
     flex-direction: column;
-    padding: 60px 30px; 
+    max-width: 1440px;
 }
 
 .cards{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 100px;
     width: 100%;
-    margin-top: 50px ;
+    margin-top: 20px;
+    font-family: "tanker";
 }
 
 .card{
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,8 +287,10 @@ ul{
     padding-top: 60px;
     border-radius: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    background: #dfe8da;
+    background: #e4e2e3;
+    height: fit-content;
 }
+
 
 .first-image{
     width: 80px;
@@ -282,6 +298,68 @@ ul{
     top: -60px;
 }
 
-.lorem{
+.content{
+    width: 100%;
     padding: 20px;
+}
+
+.first-colomun{
+    text-align: left;
+}
+
+.second-colomun{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-colomun{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.fourth-colomun{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.second-image{
+    width: 160px;
+    position: absolute;
+    top: -100px;
+}
+
+.third-image{
+    width: 200px;
+    position: absolute;
+    top: -180px;
+}
+
+.fourth-image{
+    width: 70px;
+    position: absolute;
+    top: -140px;
+}
+
+.more-button{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.left{
+    padding-right: 20px;
+}
+
+.more-menu{
+    padding: 10px 40px;
+    margin: 30px;
+    width: fit-content;
+    border: none;
+    background: #dfe8da;
+    border-radius: 20px;
 }
